@@ -1,0 +1,37 @@
+body {
+    height: 100vh;
+    transition: 0.5s;
+}
+
+.visible {
+    display: none;
+}
+
+img {
+    height: 100px;
+}
+
+form {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 400px;
+    margin: 15px;
+    border: 1px solid yellowgreen;
+}
+
+.margin {
+    margin: 10px;
+}
+
+input {
+    width: 250px;
+}
+
+.btn {
+    color: #fff;
+    padding: 10px 30px;
+    background-color: #417241;
+    border: 2px solid #bebe03;
+    border-radius: 5px;
+}
