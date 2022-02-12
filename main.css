@@ -1,4 +1,7 @@
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     transition: 0.5s;
 }
@@ -22,6 +25,7 @@ form {
 
 .margin {
     margin: 10px;
+    font-size: 18px;
 }
 
 input {

@@ -18,13 +18,13 @@ forma.addEventListener("submit", function (e) {
     let spetasSkaicius = +forma["number"].value;
     console.log(spetasSkaicius);
     if (randNumber === spetasSkaicius) {
-        atsakymas.textContent = `Atspejai, tu spajai: ${cuont} `;
+        atsakymas.textContent = `Well Done! It took you ${cuont} attempts to guess this number:  `;
     } else if (spetasSkaicius < randNumber) {
-        atsakymas.textContent = "Tavo spetas skaicius mazesnis";
-        spejimuSkaicius.textContent = `Spejimai: ${cuont} `;
+        atsakymas.textContent = "My invented number is higher";
+        spejimuSkaicius.textContent = `Guesses: ${cuont} `;
     } else {
-        atsakymas.textContent = "Tavo spetas skaicius didesnis";
-        spejimuSkaicius.textContent = `Spejimai: ${cuont} `;
+        atsakymas.textContent = "My invented number is lower";
+        spejimuSkaicius.textContent = `Guesses: ${cuont} `;
     }
-    body.appendChild(atsakymas);
+    spejimuSkaicius.appendChild(atsakymas);
 })
